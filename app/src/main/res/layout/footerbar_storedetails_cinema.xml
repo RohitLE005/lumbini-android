@@ -37,7 +37,7 @@
             android:layout_weight="1"
             android:background="@android:color/white"
             android:drawablePadding="@dimen/footer_button_label_padding"
-            android:drawableTop="@drawable/selector_footerbar_storedetails_cinema_booknow"
+            android:drawableTop="@drawable/selector_footerbar_storedetails_cinema_pvr"
             android:text="@string/Cinemas_Text"
             android:textColor="@color/selector_footer_text_color" />
 
