@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card2x2ParentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_marginBottom="@dimen/card_spacing"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+            android:id="@+id/card2x2TitleText"
+            style="@style/Card_TopTitle_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/card2x2NextIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_action_next_item" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <!--  card2x2 first image row1x2 -->
+    <LinearLayout
+        android:id="@+id/card2x2ChildRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/card_padding_2dp"
+        android:orientation="horizontal">
+        <!-- card2x2 first image col1x1 with title and sub-title -->
+        <LinearLayout
+            android:id="@+id/card2x2ChildRow1Col1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/card2x2ChildRow1Col1Image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"/>
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/card2x2ChildRow1Col1Title"
+                style="@style/Card_Title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/card2x2ChildRow1Col1Subtitle"
+                style="@style/Card_SubTitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content" />
+
+        <!-- card2x2 Second image col1x2 with title and sub-title -->
+        <LinearLayout
+            android:id="@+id/card2x2ChildRow1Col2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/card2x2ChildRow1Col2Image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"/>
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/card2x2ChildRow1Col2Title"
+                style="@style/Card_Title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/card2x2ChildRow1Col2Subtitle"
+                style="@style/Card_SubTitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--  card2x2 second Image row2x2 with title text-->
+    <LinearLayout
+        android:id="@+id/card2x2ChildRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/card_padding_2dp"
+        android:orientation="horizontal">
+
+        <!-- card2x2 first image col2x1 with title and sub-title -->
+        <LinearLayout
+            android:id="@+id/card2x2ChildRow2Col1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/card2x2ChildRow2Col1Image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"/>
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/card2x2ChildRow2Col1Title"
+                style="@style/Card_Title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/card2x2ChildRow2Col1Subtitle"
+                style="@style/Card_SubTitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content" />
+
+        <!-- card2x2 first image col2x2 with title and sub-title -->
+        <LinearLayout
+            android:id="@+id/card2x2ChildRow2Col2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/card2x2ChildRow2Col2Image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"/>
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/card2x2ChildRow2Col2Title"
+                style="@style/Card_Title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/card2x2ChildRow2Col2Subtitle"
+                style="@style/Card_SubTitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray"/>
+</LinearLayout>
+

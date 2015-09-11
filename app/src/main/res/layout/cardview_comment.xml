@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_alignParentTop="true"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layout_marginBottom="@dimen/card_spacing"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+           <com.phoenixmarketcity.android.phoenix.views.RoundImageView
+               android:id="@+id/userprofileimage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+               android:src="@drawable/ari"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="70"
+            android:orientation="vertical">
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Amritha Sinha"
+                style="@style/Username"
+                 />
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/commenttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/PostTime"
+                android:text="1 day ago"
+                 />
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/commenttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/CommentText"
+
+               />
+
+            <ImageView
+                android:id="@+id/commentImage"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+
+                />
+-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layoutlike"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iconLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_likeicon" />
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                style="@style/CommentBar"/>
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               style="@style/CommentBar"
+                android:text="Like"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/commentt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_comments_deselected"/>
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                style="@style/CommentBar"
+                android:textSize="15sp"/>
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CommentBar"
+                android:text="Comment"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shareLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/shareImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_footer_share_deselected"/>
+
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CommentBar"
+                android:text="Share"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_gray"/>
+</LinearLayout>
+
+
+
+
+

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardParkingParentView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/card_spacing"
+    android:background="@android:color/white"
+   >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray"/>
+
+    <!-- Parking Parent Row -->
+    <LinearLayout
+        android:id="@+id/cardParkingParentRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Card Parking Title Text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/cardviewParkingTiltleText"
+                style="@style/Card_TopTitle_Text"
+                android:text="PARKING RESERVATION"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee" />
+
+        <!-- End Card Parking Title Text -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/cardViewEventShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="0.33"
+                android:orientation="vertical">
+
+                <!-- Event Ticket Quantity -->
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/cardviewParkingQuintity"
+                    style="@style/ParkingQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/cardviewParkingHRS"
+                    style="@style/ParkingHRS"
+                    android:text="HRS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!-- Event Details -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".34"
+                android:orientation="vertical">
+
+                <!-- Event Name -->
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/cardviewParkingReservation"
+                    style="@style/EventName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-- Event Time -->
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/cardviewParkingDate"
+                    style="@style/EventDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-- Event Date -->
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/cardviewParkingTime"
+                    style="@style/EventTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <!-- Event Symbol of Right side -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="0.33"
+                android:orientation="vertical">
+
+                <!-- Event Icon in Right side -->
+                <ImageView
+                    android:id="@+id/cardviewParkingSymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:src="@drawable/icon_parking_batch" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp" />
+
+                <ImageView
+                    android:id="@+id/cardviewParkingCarSymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_shadow"
+            android:background="@color/light_gray"/>
+    </LinearLayout>
+    <!--margin between two cards -->
+    
+
+
+</LinearLayout>

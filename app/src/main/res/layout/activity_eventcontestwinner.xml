@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/page_background"
+    android:orientation="vertical"
+    tools:context="com.thephoenixmills.android.phoenix.activities.GenericPageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<!--image of the event artist-->
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/ari" />
+
+            <!--introduction text of the event quiz winner-->
+
+            <TextView
+                android:id="@+id/txt1"
+                style="@style/winnerintroduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="We are pleased to announce the winner of the contest is  John Doe." />
+
+            <!--introduction text of the event quiz winner-->
+            <TextView
+                android:id="@+id/congrats"
+                style="@style/congrats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt1"
+                android:gravity="center"
+                android:text="Congratulations!!!" />
+
+            <!--Name of the event contest winner-->
+
+            <TextView
+                android:id="@+id/winnername"
+                style="@style/winnername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/congrats"
+                android:gravity="center"
+                android:text="John Doe" />
+
+<!--image of the event contest winner-->
+
+            <com.phoenixmarketcity.android.phoenix.views.RoundImageView
+                android:id="@+id/rimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/winnername"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+<!--footer of the event section goes here-->
+    <include layout="@layout/footerbar_storedetails_pre_event" />
+</LinearLayout>

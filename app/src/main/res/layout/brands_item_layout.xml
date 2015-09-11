@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_shadow"
+            android:background="@color/light_gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/brandItemLogoView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"/>
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/brandItemNameTextView"
+                style="@style/Card_TopTitle_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"/>
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/brandItemLocationTextView"
+                style="@style/Card_SubTitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:paddingBottom="@dimen/card_padding_2dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_shadow"
+            android:background="@color/light_gray"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarId"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

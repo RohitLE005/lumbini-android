@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" />
+
+    <LinearLayout
+        android:id="@+id/Linear1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorPrimaryDark"
+        android:showDividers="middle"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/FooterButtonHome"
+            style="@style/FooterFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:drawablePadding="@dimen/footer_button_label_padding"
+            android:drawableTop="@drawable/selector_footerbar_homepage_home"
+            android:text="@string/Footer_Home_Button_Label"
+            android:textColor="@color/selector_footer_text_color" />
+
+
+        <Button
+            android:id="@+id/FooterButtonEventInfo"
+            style="@style/FooterFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:drawablePadding="@dimen/footer_button_label_padding"
+            android:drawableTop="@drawable/selector_footerbar_storedetails_during_event_info"
+            android:text="@string/EventInfo_Text"
+            android:textColor="@color/selector_footer_text_color" />
+
+        <Button
+            android:id="@+id/FooterButtonDiscuss"
+            style="@style/FooterFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:drawablePadding="@dimen/footer_button_label_padding"
+            android:drawableTop="@drawable/selector_footerbar_storedetails_pre_event_discuss"
+            android:text="@string/Discuss_Text"
+            android:textColor="@color/selector_footer_text_color" />
+
+
+        <Button
+            android:id="@+id/FooterButtonDo"
+            style="@style/FooterFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:drawablePadding="@dimen/footer_button_label_padding"
+            android:drawableTop="@drawable/selector_footerbar_homepage_do"
+            android:text="@string/Footer_Do_Button_Label"
+            android:textColor="@color/selector_footer_text_color" />
+    </LinearLayout>
+
+</LinearLayout>

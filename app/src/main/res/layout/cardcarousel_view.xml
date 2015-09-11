@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card2x2ParentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_spacing"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/cardcarouselParentView"
+        style="@style/CardViewStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!-- This is the Gallery -->
+        <Gallery
+            android:id="@+id/cardcarouselgallery"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="50dp"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/eventName"
+                style="@style/EventCrausalName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/eventLive"
+                style="@style/EventCrausalLive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/eventCrausalDate"
+                style="@style/EventCrausalDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white" />
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/eventCrausalTime"
+                style="@style/EventCrausalDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <include
+
+            android:id="@+id/action_items_card_pre_event_right"
+            layout="@layout/pre_event_actionitems_right" />
+
+
+        <!-- This LinearLayout if for the dots -->
+        <LinearLayout
+            android:id="@+id/cardcarouselImage_count"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:background="#00000000"
+            android:gravity="center|bottom"
+            android:orientation="horizontal" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/mainTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!--  During Event Details Program Dhamaka Text -->
+        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+            android:id="@+id/eventTitle"
+            style="@style/EventTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="@dimen/Margin_Top"
+            android:textAllCaps="true"
+            android:textColor="@color/deepGray" />
+
+        <!--  During Event Details for Program Text Status  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/evenDate"
+                style="@style/EventDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAllCaps="true"
+                android:textColor="@color/ColorLiveNowText" />
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/eventTime"
+                style="@style/EventDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="11dp"
+                android:textAllCaps="true"
+                android:textColor="@color/ColorLiveNowText" />
+
+        </LinearLayout>
+
+        <!--  During Event Details for short description Text -->
+        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+            android:id="@+id/eventShortDesc"
+            style="@style/EventShortText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/Margin_Bottom"
+            android:gravity="center" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray" />
+
+</LinearLayout>

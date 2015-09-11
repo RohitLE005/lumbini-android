@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="Cards_Gap">15dp</dimen>
+    <dimen name="Cards_Padding">12.67dp</dimen>
+    <dimen name="Margin_Bottom">12.67dp</dimen>
+    <dimen name="Margin_Top">12.67dp</dimen>
+    <dimen name="Margin_Left">12.67dp</dimen>
+    <dimen name="Margin_Right">12.67dp</dimen>
+    <dimen name="Padding">6dp</dimen>
+</resources>

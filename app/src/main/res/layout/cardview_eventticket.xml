@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardEventTicketParentView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/card_spacing"
+    android:background="@android:color/white">
+
+
+
+
+
+
+
+
+
+
+    <!-- Parking Parent Row -->
+    <LinearLayout
+        android:id="@+id/cardEventTicketParentRow"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <!-- Card Parking Title Text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Card Title Text -->
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/cardviewEventTicketTiltleText"
+                style="@style/Card_TopTitle_Text"
+                android:text="EVENT TICKET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/cardViewEventShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.42"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Event Ticket Quantity -->
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/cardviewEventTicketQuantity"
+                    style="@style/EventTicketQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <!-- Event Ticket for Gold Icon -->
+                    <ImageView
+                        android:id="@+id/cardviewEventTickettype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/IconMargin"
+                        android:src="@drawable/icon_event_gold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Event Details -->
+            <LinearLayout
+                android:id="@+id/cardViewEventDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <!-- Event Name -->
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/cardviewEventTicketName"
+                    style="@style/EventName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-- Event Time -->
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/cardviewEventTicketTime"
+                    style="@style/EventTime"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <!-- Event Date -->
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/cardviewEventTicketDate"
+                    style="@style/EventDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!-- Event Symbol of Right side -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               
+                android:orientation="vertical">
+
+                <!-- Event Icon in Right side -->
+                <ImageView
+                    android:id="@+id/cardviewEventTicketSymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/icon_event_batch" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_shadow"
+            android:background="@color/light_gray"/>
+
+
+
+
+        <!--margin between two cards -->
+
+    </LinearLayout>
+
+
+    <!--android:background="@color/ColorView"-->
+
+</LinearLayout>

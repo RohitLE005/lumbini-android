@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/page_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ColorPrimary"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bsc_title"
+                style="@style/BS_Title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center" />
+
+            <LinearLayout
+                style="@style/Layout_Margin_Left_Right"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/bsc_date"
+                    style="@style/BS_Date_Time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65" />
+
+                <TextView
+                    android:id="@+id/bsc_time"
+                    style="@style/BS_Date_Time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/TicketLayout_1"
+                style="@style/Layout_Margin_Left_Right"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/bsc_tickettype_1"
+                    style="@style/BSC_Ticket_Price_Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40" />
+
+                <TextView
+                    android:id="@+id/bsc_tickettype_1_qty"
+                    style="@style/BSC_Ticket_Price_Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/bsc_tickettype_1_price"
+                    style="@style/BSC_Ticket_Price_Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/TicketLayout_2"
+                style="@style/Layout_Margin_Left_Right"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/bsc_tickettype_2"
+                    style="@style/BSC_Ticket_Price_Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40" />
+
+                <TextView
+                    android:id="@+id/bsc_tickettype_2_qty"
+                    style="@style/BSC_Ticket_Price_Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/bsc_tickettype_2_price"
+                    style="@style/BSC_Ticket_Price_Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/TicketLayout_3"
+                style="@style/Layout_Margin_Left_Right"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/bsc_tickettype_3"
+                    style="@style/BSC_Ticket_Price_Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40" />
+
+                <TextView
+                    android:id="@+id/bsc_tickettype_3_qty"
+                    style="@style/BSC_Ticket_Price_Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/bsc_tickettype_3_price"
+                    style="@style/BSC_Ticket_Price_Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.70dp"
+                android:background="#d3d3d3" />
+
+            <LinearLayout
+                style="@style/Layout_Margin_Left_Right"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/bsc_subtotal"
+                    style="@style/BSC_Ticket_Price_Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.40"
+                    android:text="Subtotal" />
+
+                <TextView
+                    android:id="@+id/bsc_subtotal_QTY"
+                    style="@style/BSC_Ticket_Price_Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/bsc_subtotal_PRICE"
+                    style="@style/BSC_Ticket_Price_Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.4dp"
+                android:background="#d3d3d3" />
+
+            <LinearLayout
+                android:id="@+id/layout_internethandlingfees"
+                style="@style/Layout_Margin_Left_Right"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/internetcharges"
+                    style="@style/BSC_Ticket_Price_Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:text="Internet Handling Fees" />
+
+                <TextView
+                    android:id="@+id/internetcharges_price"
+                    style="@style/BSC_Ticket_Price_Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="right"
+                    android:text="250" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.4dp"
+                android:background="#d3d3d3" />
+
+            <LinearLayout
+                android:id="@+id/layout_tax"
+                style="@style/Layout_Margin_Left_Right"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tax"
+                    style="@style/BSC_Ticket_Price_Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:text="Tax" />
+
+                <TextView
+                    android:id="@+id/tax_price"
+                    style="@style/BSC_Ticket_Price_Qty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="right"
+                    android:text="250" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#d3d3d3" />
+
+            <LinearLayout
+                style="@style/Layout_Margin_Left_Right"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/bsc_total"
+                    style="@style/BSC_Total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:text="Total" />
+
+                <TextView
+                    android:id="@+id/bsc_total_price"
+                    style="@style/BSC_Total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.35"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:background="@color/page_background" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/bs_title"
+                    style="@style/BSC_PersonalDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Personal Details" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#d3d3d3" />
+
+                <LinearLayout
+                    style="@style/Layout_Margin_Left_Right"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/bss"
+                            style="@style/BSC_PersonalDetails_Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="mujeeb@le.com" />
+
+                        <TextView
+                            android:id="@+id/bsss"
+                            style="@style/BSC_PersonalDetails_Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="7760668076" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/bsssss"
+                        style="@style/BSC_PersonalDetails_Change"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35"
+                        android:gravity="right|center"
+                        android:text="change" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            style="@style/BS_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="select a payment method" />
+
+    </LinearLayout>
+
+</ScrollView>

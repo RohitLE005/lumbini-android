@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#fff"
+    android:layout_marginBottom="15dp"
+    android:weightSum="1"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/icon_check"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_tick"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/icon_active"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.10"
+        android:src="@drawable/icon_active"/>
+
+    <ImageView
+        android:id="@+id/icon_expired"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_expired"
+        android:visibility="gone"/>
+
+    <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+        android:id="@+id/contestText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.80"
+        style="@style/EventContestActivityList"/>
+
+
+    <ImageView
+        android:id="@+id/right_carrot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right_carrot"
+        android:layout_gravity="center"
+        android:layout_weight="0.10" />
+
+</LinearLayout>

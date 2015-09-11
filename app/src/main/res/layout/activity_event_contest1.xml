@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+        android:id="@+id/event_contest_text"
+        style="@style/TextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/Cards_Padding"
+        android:text="Post a Selfie with attend Arijit Singh Live Consert and get a chance to win rs1000 Gift Voucher of ZARA" />
+
+    <Button
+        android:id="@+id/btn_PostSelfie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/ColorButtonBackground"
+        android:text="CLICK HERE TO POST A SELFIE"
+        android:padding="@dimen/Padding"
+        android:textColor="@color/ColorPrimary" />
+
+
+</RelativeLayout>

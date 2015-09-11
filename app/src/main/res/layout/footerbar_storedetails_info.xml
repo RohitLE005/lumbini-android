@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray" />
+
+
+    <LinearLayout
+        android:id="@+id/Linear1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorPrimaryDark"
+        android:showDividers="middle"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/zara_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/footerbar_zaratab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Z_Text"
+                android:textColor="@color/selector_footer_text_color"
+                android:textSize="10pt" />
+
+            <TextView
+                style="@style/FooterFontStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Zara_Text"
+
+                android:textColor="@color/selector_footer_text_color" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/FooterButtonWallet"
+            style="@style/FooterFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:drawablePadding="@dimen/footer_button_label_padding"
+            android:drawableTop="@drawable/selector_footerbar_store_comments"
+            android:text="@string/Comments_Text"
+            android:textColor="@color/selector_footer_text_color" />
+
+
+        <Button
+            android:id="@+id/FooterButtonMe"
+            style="@style/FooterFontStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:drawablePadding="@dimen/footer_button_label_padding"
+            android:drawableTop="@drawable/selector_footerbar_store_share"
+            android:text="@string/Share_Text"
+            android:textColor="@color/selector_footer_text_color" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <attr name="fontType" format="enum">
+        <enum name="Raleway_Light" value="0" />
+        <enum name="Raleway_Medium" value="1" />
+        <enum name="Raleway_Bold" value="2" />
+        <enum name="Raleway_Regular" value="3" />
+        <enum name="Raleway_SemiBold" value="4" />
+        <enum name="Roboto_Black" value="5"/>
+        <enum name="Roboto_Italic" value="6"/>
+        <enum name="Roboto_Light" value="7"/>
+        <enum name="Roboto_LightItalic" value="8"/>
+        <enum name="Roboto_Medium" value="9"/>
+        <enum name="Roboto_Regular" value="10"/>
+        <enum name="Roboto_Thin" value="11"/>
+        <enum name="Roboto_Bold" value="12"/>
+    </attr>
+
+    <declare-styleable name="PhoenixFontView">
+        <attr name="fontType" />
+    </declare-styleable>
+
+</resources>

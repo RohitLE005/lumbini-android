@@ -1,0 +1,30 @@
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="ColorPrimary">#FFFFFF</color>
+    <color name="ColorPrimaryDark">#FFFFFF</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="ColorTopTitle">#555555</color>
+    <color name="gray69">#b0b0b0</color>
+    <color name="deepGray">#363636</color>
+    <color name="ColorParkingQuantity">#2b2b2b</color>
+    <color name="ColorParkingDate_Time">#595959</color>
+    <color name="ColorEventName">#0a64b0</color>
+    <color name="ColorEventTicketQuantity">#dcb427</color>
+    <color name="ColorHRS">#b3b3b3</color>
+    <color name="ColorButtonBackground">#ef351c</color>
+    <color name="goldcolor">#d9ab0c</color>
+    <color name="ColorPlatinum">#759d1f</color>
+    <color name="ColorSilver">#7bbfcb</color>
+    <color name="page_background">#eeeeee</color>
+    <color name="ColorButton">#ee351c</color>
+    <color name="ColorBlue">#ff3fa4eb</color>
+     <color name="eventwinnertext1">#616161</color>
+    <color name="ColorPreEventYesText">#019688</color>
+    <color name="ColorView">#eeeeee</color>
+    <color name="light_gray">#d3d3d3</color>
+    <color name="ColorLiveNowText">#6094f3</color>
+    <color name="yescolor">#019688</color>
+    <color name="brandpagebackground">#dbdbdb</color>
+
+</resources>

@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/profile_bg">
+
+        <ImageView
+            android:id="@+id/Logo_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/phoenix_logo" />
+
+        <TextView
+            android:id="@+id/Logo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Logo_image"
+            android:layout_centerHorizontal="true"
+            android:text="Become Part of Phoenix"
+            style="@style/slidemenuwelcometext"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Logo_text"
+            style="@style/slidlayoutmargin"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/icon_social_facebook"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.16"
+                android:src="@drawable/selector_navigation_social_facebook"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/icon_social_twitter"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.16"
+                android:src="@drawable/selector_navigation_social_twitter"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/icon_social_google_plus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.16"
+                android:src="@drawable/selector_navigation_social_google_plus"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/icon_social_instagram"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.16"
+                android:src="@drawable/selector_navigation_social_instagram"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/icon_social_mail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.16"
+                android:src="@drawable/selector_navigation_social_mail"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/icon_social_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.16"
+                android:src="@drawable/selector_navigation_social_phone"
+                android:singleLine="true" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_header_container" />
+
+    <include layout="@layout/footer_nav_drawer" />
+</RelativeLayout>

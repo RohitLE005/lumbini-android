@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card1x1ParentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_marginBottom="@dimen/card_spacing"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray"/>
+
+    <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+        android:id="@+id/card1x1TitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Card_TopTitle_Text"
+        android:text="Dummy"/>
+
+    <ImageView
+        android:id="@+id/card1x1ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray"/>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/page_background"    
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+           <!-- banner related to the event quiz-->
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/eventartist"/>
+
+<!--question of the event quiz goes here-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum color dolor set amet lorem ipsum color dolor set ametcolor dolor set amet"
+                style="@style/eventcontestdescription"
+                />
+
+            <!--options of the quiz question  goes here-->
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 1"
+                android:id="@+id/checkBox"
+                style="@style/eventoptions"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 2"
+                android:id="@+id/checkBox2"
+                style="@style/eventoptions"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 3"
+                android:id="@+id/checkBox3"
+                style="@style/eventoptions"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Option 4"
+                android:id="@+id/checkBox4"
+                style="@style/eventoptions"/>
+
+<!--submit button-->
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Submit"
+                android:layout_gravity="center"
+                style="@style/eventcontestbutton"/>
+         <Space
+             android:layout_width="match_parent"
+             android:layout_height="10dp" />
+
+        </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <!--Footer of event section included here-->
+
+    <include layout="@layout/footerbar_storedetails_pre_event"/>
+</LinearLayout>

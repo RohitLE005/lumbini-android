@@ -1,0 +1,292 @@
+<resources>
+    <!-- Manifest -->
+    <string name="app_name">Phoenix</string>
+    <!-- Action Bar -->
+    <string name="action_alert">Alert</string>
+    <string name="action_search">Search</string>
+
+    <!-- Splash Screen -->
+    <string name="splash_screen">Splash\nScreen</string>
+
+    <!-- Config Screen -->
+    <string name="title_activity_config">Config Screen</string>
+    <string name="config_version_name_number">Version Name/Number</string>
+    <string name="config_environment">Backend Environment</string>
+    <string-array name="config_environment_level_array">
+        <item>Test</item>
+        <item>Production</item>
+    </string-array>
+    <string name="config_baseurl">Base Url</string>
+    <string name="config_cityname">City</string>
+    <string-array name="config_location_array">
+        <item>Bangalore</item>
+        <item>Mumbai</item>
+        <item>Delhi</item>
+        <item>Chennai</item>
+    </string-array>
+    <string name="config_open_gls">OpenGL Version</string>
+    <string name="config_density_resol">Density/Resolution</string>
+    <string name="config_device_size">Device Size (px) Wt/Ht</string>
+    <string name="config_enable_strict_mode">Enable Strict Mode</string>
+    <string name="config_logging_level">Logging Level</string>
+    <string-array name="config_logging_level_array">
+        <item>None</item>
+        <item>Errors only</item>
+        <item>Errors &amp; warnings</item>
+        <item>Errors,  warnings &amp; info</item>
+        <item>Errors,  warnings, info &amp; debug</item>
+        <item>All</item>
+    </string-array>
+    <string name="config_launch_app">Launch App</string>
+
+    <!-- Resolution -->
+    <string name="density_high_string">HDPI</string>
+    <string name="density_extra_high_string">XHDPI</string>
+    <string name="density_exxtra_high_string">XXHDPI</string>
+    <string name="density_default_string">master</string>
+
+    <!-- Login Activity -->
+    <string name="title_activity_login">Phoenix Mall</string>
+    <string name="facebook_app_id">1465099017118806</string>
+
+    <!-- Dummy Page -->
+    <string name="title_activity_dummypages">Dummy Pages</string>
+    <string name="no_contents_page_body">No Content To Display</string>
+    <!-- Home Screen -->
+    <string name="title_activity_homepage">Home</string>
+    <string name="homeTabTitle">Home</string>
+    <string name="shopTabTitle">Shop</string>
+    <string name="dineTabTitle">Dine</string>
+    <string name="moviesTabTitle">Movies</string>
+    <string name="eventsTabTitle">Events</string>
+    <string name="OfferTabTitle">Offers</string>
+    <string name="MoreTabTitle">More</string>
+    <string name="allTabTitle">All</string>
+    <string name="walletTabTitle">Wallet</string>
+    <string name="meTabTitle">Me</string>
+    <string name="storeTabTitle">Store</string>
+    <string name="title_activity_brands">Brands</string>
+    <string name="title_activity_wallet">Wallet</string>
+    <string name="title_activity_do">Do</string>
+    <string name="title_activity_FilterPage">FILTER BY</string>
+    <string name="title_activity_BaseActivity">Base Activity</string>
+    <string name="title_activity_SearchResult">Search Result</string>
+    <string name="title_activity_book_table">Book A Table</string>
+    <string name="title_activity_collections">Collections</string>
+
+    <!-- Card Views -->
+    <string name="cardview_event_title">EVENT TICKET</string>
+
+    <!-- Brands Activity -->
+    <string name="title_activity_store">Store</string>
+    <string name="brands_activity_sort_button_label">SORT</string>
+    <string name="brands_activity_filter_button_label">FILTER</string>
+    <string name="sort_dialog_title_text">SORT BY</string>
+    <string name="sort_dialog_all_store_text">All Store</string>
+    <string name="sort_dialog_popular_stores_text">Popular Stores</string>
+    <string name="sort_dialog_feature_stores_text">Feature Stores</string>
+    <string name="filter_button_text_clear">CLEAR ALL</string>
+    <string name="filter_button_text_apply">APPLY</string>
+    <string-array name="sort_options">
+        <item>All Store</item>
+        <item>Popular Stores</item>
+        <item>Feature Stores</item>
+    </string-array>
+
+    <!-- RSVP Card Strings -->
+    <string name="RSVP_TitleText">RSVP</string>
+    <string name="RSVP_QuestionText">Are you planing to attend the event?</string>
+    <string name="RSVP_YesText">YES</string>
+    <string name="RSVP_NoText">NO</string>
+    <string name="RSVP_MaybeText">MAYBE</string>
+
+    <!-- Description Card -->
+    <string name="Description_Text">Description</string>
+    <string name="Tips_Text">Tips</string>
+
+    <string name="Button_book_now">BOOK NOW</string>
+    <string name="Button_Invite">INVITE</string>
+    <string name="title_activity_event_details">Event Details</string>
+
+
+    <!-- Text for All Footers -->
+
+    <!-- Text for footerbar_homepage -->
+    <string name="Footer_Home_Button_Label">HOME</string>
+    <string name="Footer_Brand_Button_Label">BRANDS</string>
+    <string name="Footer_Wallet_Button_Label">WALLET</string>
+    <string name="Footer_Do_Button_Label">DO</string>
+
+    <!-- Text for footerbar_storedetails_catalog -->
+    <string name="Z_Text">Z</string>
+    <string name="Zara_Text">ZARA</string>
+    <string name="Collection_Text">COLLECTION</string>
+    <string name="Comments_Text">COMMENTS</string>
+    <string name="Share_Text">SHARE</string>
+
+    <!-- Text for footerbar_storedetails_cinema -->
+    <string name="Book_Ticket_Text">Book Ticket</string>
+    <string name="Cinemas_Text">CINEMAS</string>
+    <string name="ShowTiming_Text">SHOW TIMING</string>
+
+    <!-- Text for footerbar_storedetails_during_event -->
+    <string name="EventInfo_Text">EVENT INFO</string>
+    <string name="WritePost_Text">WRITE POST</string>
+
+    <!-- Text for footerbar_storedetails_during_event -->
+    <string name="Contest_Text">CONTEST</string>
+    <string name="Offer_Text">OFFER</string>
+
+    <!-- Text for footerbar_storedetails_ecommerce -->
+    <string name="Cart_Text">CART</string>
+
+    <!-- Text for footerbar_storedetails_fnb -->
+    <string name="H_Text">H</string>
+    <string name="Hanoi_Text">HANOI</string>
+    <string name="Menu_Text">MENU</string>
+
+    <!-- Text for footerbar_storedetails_pre_events -->
+    <string name="PlayYourDay_Text">PLAY YOUR DAY</string>
+    <string name="Discuss_Text">DISCUSS</string>
+
+    <!-- Text for footerbar_storedetails_service -->
+    <string name="O2_Text">O2</string>
+    <string name="SPA_Text">SPA</string>
+    <string name="Services_Text">SERVICES</string>
+
+    <!-- End of Text for Footers -->
+
+
+    <!-- Error handling STARTS -->
+    <string name="error_page_empty">No content to display</string>
+
+
+    <!-- Error handling ENDS -->
+
+    <!-- Beacon String starts -->
+    <string name="kontakt_io_api_key">UEbDvMEuSVLfJFYytxrltDwGfuaUBIaZ</string>
+    <string name="bluetooth_enable_message">If you are inside the mall, switch on bluetooth to receive latest offers and deals.</string>
+
+    <!-- Beacon String ends -->
+
+    <!-- GCM String starts -->
+    <string name="gcm_sender_id">777996629847</string>
+    <!-- GCM String ends -->
+
+    <!-- Console Android Key -->
+    <string name="android_key">AIzaSyAsaR1j8L8yMpwLtobr6zRip2JdmfAgGHw</string>
+
+    <!-- Console Android Key -->
+
+    <!-- Errors -->
+    <string name="page_layout_fetch_error">Unable to fetch %s page layout.</string>
+    <string name="brand_list_fetch_error">Unable to fetch brands</string>
+<!--Array for Navigation Drawer-->
+    <string name="drawer_open">Opened</string>
+    <string name="drawer_close">Closed</string>
+
+    <string-array name="nav_drawer_items">
+        <item>Contest</item>
+        <item>Recently Viewed</item>
+        <item>Call</item>
+    </string-array>
+    <array name="nav_drawer_images">
+        <item>@drawable/icon_navigation_contest</item>
+        <item>@drawable/icon_navigation_recently_viewd</item>
+        <item>@drawable/icon_navigation_call</item>
+    </array>
+    <string-array name="nav_drawer_items_login">
+        <item>My Orders</item>
+        <item>My Accounts</item>
+        <item>My Profile</item>
+        <item>My Friends</item>
+        <item>Contest</item>
+        <item>Recently Viewed</item>
+        <item>Call</item>
+    </string-array>
+    <integer-array name="nav_drawer_images_login">
+        <item>@drawable/phoenix_logo</item>
+        <item>@drawable/phoenix_logo</item>
+        <item>@drawable/phoenix_logo</item>
+        <item>@drawable/phoenix_logo</item>
+        <item>@drawable/phoenix_logo</item>
+        <item>@drawable/phoenix_logo</item>
+        <item>@drawable/phoenix_logo</item>
+    </integer-array>
+
+    <!--User Registration Array-->
+    <string name="title_eventcontestactivity">Event Contest</string>
+    <string name="title_eventcontestwinneractivity">Event Contest Winner</string>
+    <string name="title_UserloginActivity">User Login</string>
+    <string name="title_userregistrationActivity">User Registration</string>
+    <string name="title_addnewaddressActivity">Add New Address</string>
+    <string name="title_myaddressActivity">MY Address</string>
+    <string name="title_activity_user_alternateaddress">Alternate Address</string>
+    <string name="city_arrays">Choose a city</string>
+
+    <string-array name="city_arrays">
+        <item>Delhi</item>
+        <item>Bangalore</item>
+        <item>Chennai</item>
+        <item>Mumbai</item>
+        <item>Indore</item>
+        <item>Guwahati</item>
+        <item>kolkatta</item>
+        <item>Vellore</item>
+    </string-array>
+    <string-array name="contry_arrays">
+        <item>India</item>
+        <item>Pakisthan</item>
+        <item>Taliban</item>
+        <item>Suleman</item>
+        <item>Afganisthan</item>
+        <item>Saudi Arabia</item>
+        <item>China</item>
+    </string-array>
+    <string-array name="state_arrays">
+        <item>Bihar</item>
+        <item>Jharkhand</item>
+        <item>West-Bengal</item>
+        <item>Assam</item>
+        <item>Orissa</item>
+        <item>Arunachal Pradesh</item>
+        <item>Gujrat</item>
+    </string-array>
+
+    <string-array name="do_items_Textlist">
+        <item>Check In</item>
+        <item>Parking</item>
+        <item>Click A Photo</item>
+        <item>Find A Place</item>
+        <item>Scan A Code</item>
+        <item>Augment Reality</item>
+        <item>Wheelchair Assistance</item>
+        <item>Shopping Assistance</item>
+        <item>Book A Party</item>
+        <item>One Touch Assistance</item>
+        <item>Book A Cab</item>
+    </string-array>
+    <integer-array name="do_items_Imageslist">
+        <item>@drawable/check_in</item>
+        <item>@drawable/parking</item>
+        <item>@drawable/click_a_photo</item>
+        <item>@drawable/find_a_place</item>
+        <item>@drawable/scan_a_code</item>
+        <item>@drawable/augment_reality</item>
+        <item>@drawable/wheelchair</item>
+        <item>@drawable/shopping_assistance</item>
+        <item>@drawable/book_a_party</item>
+        <item>@drawable/one_touch_assistance</item>
+        <item>@drawable/book_a_cab</item>
+    </integer-array>
+
+    <!--Text for Movie description-->
+
+    <string name="showtiming">SHOW TIMING</string>
+    <string name="releasedate">Release Date:</string>
+    <string name="runtime">Run Time:</string>
+    <string name="director">Director:</string>
+    <string name="language">Language:</string>
+    <string name="genre">Genre:</string>
+    <string name="cast">Cast:</string>
+</resources>

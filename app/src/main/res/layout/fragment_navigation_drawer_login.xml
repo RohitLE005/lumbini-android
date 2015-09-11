@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/nav_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/profile_bg">
+
+
+        <com.phoenixmarketcity.android.phoenix.views.RoundImageView
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:src="@drawable/phoenix_logo"
+            android:background="@drawable/profile_pic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_below="@id/profile_image"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/profile_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.80"
+            android:text="Mujeeb Rahaman"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:gravity="center|left"/>
+
+        <ImageView
+            android:id="@+id/profile_Exp_DeExp_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:scaleType="fitCenter"
+            android:layout_gravity="right"
+            android:gravity="center|right"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/profile_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_layout"
+            android:text="I am in event at phoenix mall"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/drawerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nav_header_container" />
+    <include
+        layout="@layout/footer_nav_drawer"/>
+
+</RelativeLayout>

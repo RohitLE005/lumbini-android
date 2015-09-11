@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#10000000"
+    android:weightSum="1">
+    <ListView
+        android:id="@+id/leftListViewId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.90"
+        android:choiceMode="singleChoice"
+        android:listSelector="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/buttonClearAll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.11"
+        android:textColor="#FFFFFF"
+        android:background="#FF8080"
+        android:text="@string/filter_button_text_clear"/>
+</LinearLayout>

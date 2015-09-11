@@ -1,0 +1,44 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right|bottom"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:showDividers="middle"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_marginTop="90dp">
+
+        <ImageView
+            android:id="@+id/cartt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/iconwishlist"/>
+
+        <ImageView
+            android:id="@+id/likee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/iconlike"/>
+
+        <ImageView
+            android:id="@+id/calll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/iconcall"/>
+        </LinearLayout>
+</LinearLayout>
+
+
+    </merge>

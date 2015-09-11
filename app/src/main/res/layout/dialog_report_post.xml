@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/eventPost1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:text="I don't like this post"
+        android:textSize="12.67sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray" />
+
+    <TextView
+        android:id="@+id/eventPost2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:text="This post is spam or scam"
+        android:textSize="12.67sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray" />
+
+    <TextView
+        android:id="@+id/eventPost3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:text="This post puts people at risk"
+        android:textSize="12.67sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray" />
+
+    <TextView
+        android:id="@+id/eventPost4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:text="This post should be an adult"
+        android:textSize="12.67sp" />
+
+</LinearLayout>

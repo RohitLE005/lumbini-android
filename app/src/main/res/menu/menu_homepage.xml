@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.phoenixmarketcity.android.phoenix.activities.LandingPageActivity">
+    <item
+        android:id="@+id/actionbar_alertAction"
+        android:icon="@drawable/icn_notification"
+        android:title="@string/action_alert"
+	app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/actionbar_searchAction"
+        android:title="@string/action_search"
+        android:icon="@drawable/icn_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.widget.SearchView" />
+
+</menu>

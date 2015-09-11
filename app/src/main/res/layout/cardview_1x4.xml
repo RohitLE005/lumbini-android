@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card1x4ParentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_marginBottom="@dimen/card_spacing"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray"/>
+
+    <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+        android:id="@+id/card1x4TitleText"
+        style="@style/Card_TopTitle_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/right_carrot"/>
+
+    <!-- Card1x4 Image Row -->
+    <LinearLayout
+        android:id="@+id/card1x4ImageRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/card1x4ImageView1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="24.7"
+            android:adjustViewBounds="true"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"/>
+
+        <ImageView
+            android:id="@+id/card1x4ImageView2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="24.7"
+            android:adjustViewBounds="true"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"/>
+
+        <ImageView
+            android:id="@+id/card1x4ImageView3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="24.7"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="1dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"/>
+
+        <ImageView
+            android:id="@+id/card1x4ImageView4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="24.7"
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray"/>
+</LinearLayout>
+

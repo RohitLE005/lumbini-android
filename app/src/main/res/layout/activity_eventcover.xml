@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/eventCoverParentLayoutId"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!-- Event short detaisl on Screen -->
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+            android:id="@+id/cardEventCoverArtistName"
+            style="@style/CoverName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAllCaps="true" />
+
+        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+            android:id="@+id/cardEventCoverStatus"
+            style="@style/CoverLive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/ColorPrimaryDark" />
+
+        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+            android:id="@+id/cardEventCoverDate"
+            style="@style/CoverDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/ColorPrimaryDark" />
+
+        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+            android:id="@+id/cardEventCoverTime"
+            style="@style/CoverDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/ColorPrimaryDark" />
+
+    </LinearLayout>
+
+    <!-- Setting button of View Details and Book Now as well as next Event Icon -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/view_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:background="@color/ColorButton"
+            android:text="View Detail"
+            android:textColor="@color/ColorPrimaryDark" />
+
+        <Button
+            android:id="@+id/book_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@color/ColorButton"
+            android:text="Book Now"
+            android:textColor="@color/ColorPrimaryDark" />
+
+        <ImageView
+            android:id="@+id/event_Next_Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:src="@drawable/right_carrot" />
+
+    </LinearLayout>
+
+</LinearLayout>

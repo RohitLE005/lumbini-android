@@ -1,0 +1,256 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:id="@+id/movieParentViewId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--<com.google.android.youtube.player.YouTubePlayerView-->
+                <!--android:id="@+id/videoView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+                <fragment
+                    android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                    android:id="@+id/youtube_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/ButtonShowTiming"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/layoutmarginwithtop"
+                        android:background="@color/textColorPrimary"
+                        android:text="@string/showtiming"
+                        android:textColor="@color/ColorPrimaryDark" />
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        style="@style/layoutmargin"
+                        android:weightSum="1">
+
+                        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                            android:id="@+id/ReleaseDate"
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            style="@style/movieDetails"
+                            android:layout_height="wrap_content"
+                            android:text="Release Date:"
+                            />
+
+                        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                            android:id="@+id/ReleaseDateText"
+                            android:layout_weight="0.7"
+                            android:layout_width="0dp"
+                            style="@style/movieDetails"
+                            android:layout_height="wrap_content"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        style="@style/layoutmargin"
+                        android:weightSum="1">
+
+                        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                            android:id="@+id/RunTime"
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/runtime"
+                            style="@style/movieDetails"
+                            />
+
+                        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                            android:id="@+id/RunTimeText"
+                            android:layout_weight="0.7"
+                            android:layout_width="0dp"
+                            style="@style/movieDetails"
+                            android:layout_height="wrap_content"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        style="@style/layoutmargin"
+                        android:weightSum="1">
+
+                        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                            android:id="@+id/Director"
+                            style="@style/movieDetails"
+
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/director"
+                            />
+
+                        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                            android:id="@+id/DirectorText"
+                            android:layout_weight="0.7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            style="@style/movieDetails"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        style="@style/layoutmargin"
+                        android:weightSum="1">
+
+                        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                            android:id="@+id/Language"
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/language"
+                            style="@style/movieDetails"
+                            />
+
+                        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                            android:id="@+id/LanguageText"
+                            android:layout_weight="0.7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            style="@style/movieDetails"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        style="@style/layoutmargin"
+                        android:weightSum="1">
+
+                        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                            android:id="@+id/Genre"
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/genre"
+                            style="@style/movieDetails"
+                            android:layout_marginTop="10dp" />
+
+                        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                            android:id="@+id/GenreText"
+                            android:layout_weight="0.7"
+                            android:layout_width="0dp"
+                            style="@style/movieDetails"
+                            android:layout_height="wrap_content"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        style="@style/layoutmargin"
+                        android:weightSum="1">
+
+                        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                            android:id="@+id/Cast"
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cast"
+                            style="@style/movieDetails"
+                            android:layout_marginTop="10dp" />
+
+                        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                            android:id="@+id/CastText"
+                            android:layout_weight="0.7"
+                            android:layout_width="0dp"
+                            style="@style/movieDetails"
+                            android:layout_height="wrap_content"
+
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+
+                        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+
+                            android:id="@+id/StoryDescription"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            style="@style/movieStoryDescription"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>
+    <ProgressBar
+        android:id="@+id/movieProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="@android:style/Widget.Holo.ProgressBar"/>
+
+    <TextView
+        android:id="@+id/error_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:text="@string/error_page_empty"/>
+    <include layout="@layout/footerbar_storedetails_cinema"/>
+</LinearLayout>

@@ -1,0 +1,833 @@
+<resources>
+
+    <style name="FullscreenTheme" parent="android:Theme.Holo">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="android:Widget.Holo.ActionBar">
+        <item name="android:windowActionBarOverlay">@null</item>
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+
+    <!--  Style of Top Title Text -->
+    <style name="Card_TopTitle_Text">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+        <item name="fontType">Roboto_Light</item>
+    </style>
+
+    <!-- Style of Title Text -->
+    <style name="Card_Title_text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">@color/deepGray</item>
+        <item name="fontType">Roboto_Light</item>
+    </style>
+
+    <!-- Style of SubTitle Text -->
+    <style name="Card_SubTitle_text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">@color/gray69</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+
+    <!-- Style of Event Singer Name -->
+    <style name="EventName">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColor">@color/ColorEventName</item>
+        <item name="fontType">Roboto_Light</item>
+    </style>
+
+    <!--Style For  event ticket popwindow-->
+    <style name="Eventticket">
+        <item name="android:text">EVENT TICKET</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="fontType">Raleway_Regular</item>
+    </style>
+
+    <style name="Layout">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="icon_x">
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+
+
+
+    <style name="icon_event">
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">-2dp</item>
+    </style>
+
+
+
+    <style name="Username">
+        <item name="android:text">AMIT MISHRA</item>
+        <item name="fontType">Roboto_Regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Numberoftickets">
+        <item name="android:text">3</item>
+        <item name="android:layout_marginTop">-5dp</item>
+        <item name="fontType">Roboto_Thin</item>
+        <item name="android:textColor">@color/ColorEventTicketQuantity</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="image_barcode">
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="Terms">
+        <item name="android:text">Terms And Conditions</item>
+        <item name="android:textColor">@color/ColorBlue</item>
+        <item name="fontType">Roboto_Regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="tnc">
+        <item name="android:text">Terms And Conditions</item>
+        <item name="android:textColor">@color/ColorBlue</item>
+        <item name="fontType">Roboto_Regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="bottom_image_topmargin">
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+
+    <!--Style For offercard popupwindow-->
+
+    <style name="Offerfromzara">
+        <item name="android:text">OFFER FROM ZARA</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="fontType">Raleway_Regular</item>
+    </style>
+
+    <style name="Productname">
+        <item name="android:text">ZARA</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="fontType">Raleway_Bold</item>
+    </style>
+
+    <style name="view">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="Floor">
+        <item name="android:text">First Floor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="fontType">Roboto_Medium</item>
+        <item name="android:textColor">@color/gray69</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="Direction">
+        <item name="android:text">Directions</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/ColorBlue</item>
+    </style>
+
+    <style name="Bigweekendoffer">
+        <item name="android:text">BIG WEEKEND OFFER</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="fontType">Raleway_SemiBold</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="Bigweekendoffertext">
+        <item name="android:text">Lorem ipsum dolor sit anet,consectetur adpising elit.Integer nec
+            adio.Praesant libero
+        </item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="fontType">Raleway_Medium</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="Validupto">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">13sp</item>
+        <item name="fontType">Raleway_Bold</item>
+        <item name="android:text">VALID UPTO</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+    <style name="Validdate">
+        <item name="android:text">MAY 24,2015</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:layout_marginTop">-18dp</item>
+        <item name="fontType">Raleway_Bold</item>
+    </style>
+
+    <style name="Termsandcondition">
+        <item name="android:text">Terms And Conditions</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontType">Roboto_Regular</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">@color/ColorBlue</item>
+    </style>
+
+    <style name="margin">
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="image_margin">
+
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="booknowtextmargin">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="fontType">Raleway_Bold</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="bottom_texttype">
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="fontType">Raleway_Bold</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <!-- Style of Event Time -->
+    <style name="EventTime">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ColorParkingDate_Time</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="fontType">Roboto_Light</item>
+    </style>
+
+    <!-- Style of Event Date -->
+    <style name="EventDate">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/ColorParkingDate_Time</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="fontType">Roboto_Light</item>
+    </style>
+
+    <style name="EventNumberStyle">
+        <item name="android:textSize">40sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#d9ab0f</item>
+    </style>
+
+    <!-- Style of Event Ticket Quantity -->
+    <style name="EventTicketQuantity">
+        <item name="android:textSize">45sp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textColor">@color/ColorEventTicketQuantity</item>
+        <item name="fontType">Roboto_Thin</item>
+
+    </style>
+
+    <!-- Style of Parking Date -->
+    <style name="ParkingDate">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">6.67sp</item>
+        <item name="android:textColor">@color/ColorParkingDate_Time</item>
+        <item name="android:layout_marginLeft">75dp</item>
+    </style>
+
+    <!-- Style of Parking Quantity -->
+    <style name="ParkingQuantity">
+        <item name="android:textSize">45sp</item>
+        <item name="android:textColor">@color/ColorParkingQuantity</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="fontType">Roboto_Thin</item>
+    </style>
+
+    <!-- Style of Parking Time -->
+    <style name="ParkingTime">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">6.67sp</item>
+        <item name="android:textColor">@color/ColorParkingDate_Time</item>
+        <item name="android:layout_marginLeft">100dp</item>
+    </style>
+
+    <!-- Style of Parking Time -->
+    <style name="ParkingHRS">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ColorHRS</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+
+    <!-- RSVP Card Style -->
+
+
+
+    <!--Style For Book Now Screen-->
+    <style name="Layout_Margin_Left_Right">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+    <style name="Layout_Margin_Top">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+    <style name="BS_Title">
+        <item name="android:textSize">14.67sp</item>
+        <item name="android:textColor">@color/deepGray</item>
+        <item name="android:background">@color/ColorPrimary</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+    <style name="BS_Date_Time">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+
+    <style name="BS_Class_Price_Qty">
+        <item name="android:textSize">14.67sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+    <style name="BS_Ticket_price_qty">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+        <item name="fontType">Roboto_Light</item>
+    </style>
+
+    <style name="BS_Button">
+        <item name="android:textSize">10.67sp</item>
+        <item name="fontType">Roboto_Regular</item>
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="android:background">@color/ColorButton</item>
+        <item name="android:paddingLeft">13dp</item>
+        <item name="android:paddingRight">13dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+
+    <!--Style for Book Now Screen Confirm-->
+    <style name="BSC_Ticket_Price_Qty">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+        <item name="fontType">Roboto_Light</item>
+    </style>
+    <style name="BSC_Total">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+
+    <style name="BSC_PersonalDetails">
+        <item name="android:textSize">14.67sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+    <style name="BSC_PersonalDetails_Name">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+    <style name="BSC_PersonalDetails_Change">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+        <item name="android:background">@color/ColorPrimary</item>
+        <item name="android:shadowColor">@color/ColorPrimary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+
+    <!-- Brands Page -->
+    <style name="Brands_Button_Style">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+        <item name="fontType">Roboto_Light</item>
+    </style>
+
+    <!--starts preeventdeatails styles-->
+
+    <style name="eventdetailcardwithdesc">
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:textColor">@color/deepGray</item>
+        <item name="android:textSize">14.67sp</item>
+        <item name="fontType">Raleway_Regular</item>
+    </style>
+    <style name="eventstatus">
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:textColor">@color/ColorLiveNowText</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontType">Raleway_Medium</item>
+    </style>
+    <style name="eventdetails">
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+        <item name="android:textSize">10.67sp</item>
+        <item name="fontType">Raleway_Medium</item>
+    </style>
+
+    <style name="Card_InviteText">
+        <item name="android:textSize">14.67sp</item>
+        <item name="android:textColor">@color/deepGray</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+    <style name="Tips">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="Card_TipsTextPoint">
+        <item name="android:textSize">11.33sp</item>
+        <item name="android:layout_marginLeft">15sp</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+        <item name="fontType">Roboto_Light</item>
+    </style>
+    <style name="eventdescriptiontitle">
+        <item name="android:textSize">14.67sp</item>
+        <item name="android:layout_marginLeft">15sp</item>
+        <item name="android:textColor">@color/deepGray</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+    <style name="eventdescriptiontext">
+        <item name="android:textSize">11.33sp</item>
+        <item name="android:layout_marginLeft">15sp</item>
+        <item name="android:textColor">@color/deepGray</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+    <style name="Card_Button_Style">
+        <item name="android:background">@color/ColorButtonBackground</item>
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontType">Roboto_Medium</item>
+    </style>
+
+    <style name="eventperformtitle">
+        <item name="android:textSize">9.33sp</item>
+        <item name="fontType">Roboto_Regular</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+    </style>
+
+    <style name="EventPerformerNameStyle">
+        <item name="android:textSize">14.67sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/ColorLiveNowText</item>
+        <item name="android:gravity">center</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+
+    <style name="EventPerformTicketPrice">
+        <item name="android:textSize">14.67sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+        <item name="android:gravity">center</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+
+    <style name="TicketPriceTypegold">
+        <item name="android:textSize">9.33sp</item>
+        <item name="fontType">Raleway_Bold</item>
+        <item name="android:textColor">@color/goldcolor</item>
+    </style>
+
+    <style name="TicketPriceTypeplatinum">
+        <item name="android:textSize">9.33sp</item>
+        <item name="fontType">Raleway_Bold</item>
+        <item name="android:textColor">@color/ColorPlatinum</item>
+    </style>
+    <style name="TicketPriceSilver">
+        <item name="android:textSize">9.33sp</item>
+        <item name="fontType">Raleway_Bold</item>
+        <item name="android:textColor">@color/ColorSilver</item>
+    </style>
+    <!-- RSVP Card Style -->
+
+    <style name="Card_RSVP_QuestionText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+        <item name="fontType">Roboto_Regular</item>
+        <item name="android:text">@string/RSVP_QuestionText</item>
+    </style>
+
+    <style name="Card_RSVP_YesText">
+        <item name="android:textSize">11.33sp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="fontType">Roboto_Regular</item>
+        <item name="android:textColor">@color/yescolor</item>
+    </style>
+
+    <style name="Card_RSVP_NoText">
+        <item name="android:textSize">11.33sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="fontType">Roboto_Regular</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+    </style>
+
+    <style name="Card_RSVP_MaybeText">
+        <item name="android:textSize">11.33sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="fontType">Roboto_Regular</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+    </style>
+
+    <!-- Tips Card Style -->
+    <style name="Card_TipsText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+    <style name="Card_DescriptionText">
+        <item name="android:textSize">11.33sp</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+    <style name="TicketStyle">
+        <item name="android:textSize">10sp</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+
+    <!--  Style of Top Event Title Text -->
+    <style name="Card_EventTitle_Text">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+        <item name="fontType">Roboto_Light</item>
+    </style>
+
+
+    <style name="Card_InviteFriend">
+        <item name="android:textSize">11.33sp</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+
+    <!-- Style of PreEventTicket of RSVP -->
+    <style name="RSVP_YesText">
+        <item name="android:textSize">11.33sp</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+
+    <style name="RSVP_Question">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/ColorTopTitle</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+
+    <!-- Event Style -->
+    <style name="EventTitleText">
+        <item name="android:textSize">14.67sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+    <style name="EventShortText">
+        <item name="android:textSize">10sp</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+    <style name="EventDateTime">
+        <item name="android:textSize">12sp</item>
+        <item name="fontType">Roboto_Medium</item>
+    </style>
+    <!--styles for  login screens-->
+    <style name="Email">
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <style name="phoenixicon">
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="signin">
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <!-- Style for Event Cover Page -->
+    <style name="CoverName">
+        <item name="android:textSize">60sp</item>
+        <item name="fontType">Roboto_Thin</item>
+        <item name="android:textColor">@color/ColorPrimaryDark</item>
+        <item name="android:layout_marginTop">55dp</item>
+    </style>
+    <style name="CoverLive">
+        <item name="android:textSize">30sp</item>
+        <item name="fontType">Roboto_Bold</item>
+        <item name="android:textColor">@color/ColorPrimaryDark</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="CoverDateTime">
+        <item name="android:textSize">20sp</item>
+        <item name="fontType">Roboto_Regular</item>
+        <item name="android:textColor">@color/ColorPrimaryDark</item>
+    </style>
+    <!-- style of Pre Event Crausal Text -->
+    <style name="EventCrausalName">
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="fontType">Roboto_Thin</item>
+    </style>
+    <style name="EventCrausalLive">
+        <item name="android:textSize">16sp</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+    <style name="EventCrausalDateTime">
+        <item name="android:textSize">10sp</item>
+        <item name="fontType">Roboto_Medium</item>
+    </style>
+    <style name="socials">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+    <style name="socialsicons">
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+    <style name="mainlayout">
+        <item name="android:background">@color/ColorPrimary</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+    <style name="secondlayout">
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+    <style name="vone">
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="signupbutton">
+        <item name="android:background">@color/ColorButtonBackground</item>
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+    <style name="layouttwo">
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+    </style>
+    <style name="layouttwotitle">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="fontType">Roboto_Regular</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+    <style name="edittxts">
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+    <!--styles for activity add new address-->
+    <style name="pagetitle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="fontType">Roboto_Regular</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+    <style name="line">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+    <style name="llayout">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="txtone">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="edone">
+        <item name="android:layout_marginRight">10dp</item>
+    </style>
+
+    <style name="txttwo">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="checkbox">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="Button">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:background">@color/ColorButtonBackground</item>
+        <item name="android:textColor">@color/ColorPrimary</item>
+    </style>
+    <style name="addnewaddrs">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+    <style name="fname">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+    <style name="name">
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+
+        <!--styles for slide menu-->
+    <style name="slidemenuparentlayout">
+        <item name="android:paddingTop">18dp</item>
+        <item name="android:paddingLeft">20dp</item>
+    </style>
+    <style name="sliderowtext">
+        <item name="android:paddingLeft">40dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="fontType">Roboto_Light</item>
+    </style>
+
+    <style name="slidemenuwelcometext">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+    <style name="slidlayoutmargin">
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+    <style name="footericonstyles">
+        <item name="android:background">@color/ColorPrimary</item>
+        <item name="fontType">Roboto_Light</item>
+        <item name="android:textSize">7sp</item>
+        <item name="android:layout_marginRight">2dp</item>
+    </style>
+
+
+    <style name="pin">
+        <item name="android:textSize">10sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+    <!-- wallet money card styles-->
+    <style name="parentwalletmoneycard">
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:background">@color/ColorPrimaryDark</item>
+    </style>
+
+    <style name="walletmoneycardtitle">
+        <item name="android:textSize">12.67sp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="fontType">Roboto_Thin</item>
+    </style>
+
+    <style name="cardpaddings">
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="walletmoneytext">
+        <item name="android:textSize">20sp</item>
+        <item name="fontType">Roboto_Regular</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="EventContestActivityList">
+        <item name="android:textSize">11.33sp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+
+    <style name="LiveEventStyle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginLeft">11dp</item>
+        <item name="android:layout_marginTop">11dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="fontType">Roboto_Bold</item>
+    </style>
+
+    <style name="performText">
+        <item name="android:textSize">11.33sp</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+
+    <style name="TextStyle">
+        <item name="android:textSize">11sp</item>
+        <item name="fontType">Roboto_Regular</item>
+    </style>
+
+    <style name="TitleTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="fontType">Roboto_Bold</item>
+    </style>
+
+    <style name="movieDetails">
+        <item name="android:textSize">14sp</item>
+        <item name="fontType">Roboto_Regular</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="movieStoryDescription">
+        <item name="android:textSize">14sp</item>
+        <item name="fontType">Roboto_Regular</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textColor">@color/gray69</item>
+    </style>
+
+    <style name="layoutmarginwithtop">
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="layoutmargin">
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+
+    </style>
+
+
+</resources>

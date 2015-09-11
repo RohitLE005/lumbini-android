@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardEventPerformanceParentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_marginBottom="@dimen/card_spacing"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/Cards_Padding">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- setting Card Title Name -->
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/card_EventPerformTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="PERFORMING"
+                android:textAllCaps="true"
+                style="@style/EventPerformText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/card_EventArtistName"
+                style="@style/EventPerformerNameStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="@dimen/Cards_Gap" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+            <!-- Setting of Gold Ticket and Price -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/card_EventGoldTicketPrice"
+                    style="@style/EventPerformTicketPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp" />
+
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/card_EventGoldTicketType"
+                    style="@style/TicketPriceType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/goldcolor" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="0dp" />
+            <!-- Setting of Platinum Ticket and Price -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/card_EventSilverTicketPrice"
+                    style="@style/EventPerformTicketPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp" />
+
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/card_EventSilverTicketType"
+                    style="@style/TicketPriceType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ColorPlatinum" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="0dp" />
+
+            <!-- Setting of Silver Ticket and Price -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/card_EventVVIPTicketPrice"
+                    style="@style/EventPerformTicketPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Space
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp" />
+
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/card_EventVVIPTicketType"
+                    style="@style/TicketPriceType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ColorSilver" />
+            </LinearLayout>
+            <!-- Setting of Book now Buton -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <Button
+                android:id="@+id/CardEventPerformButton"
+                style="@style/Card_Button_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/Button_book_now" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!-- Gaps Below Cards -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray"/>
+</LinearLayout>

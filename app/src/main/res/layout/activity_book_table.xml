@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/aaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/storedetail_fb_caraousel_image1" />
+
+        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/Cards_Padding"
+            android:text="Book A Table"
+            android:textColor="@color/ColorParkingQuantity"
+            style="@style/TitleTextStyle"/>
+
+        <!--Layout for setting Number of people-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/Margin_Left"
+            android:layout_marginRight="@dimen/Margin_Right"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center_vertical"
+                android:text="How Many People ?"
+                style="@style/TextStyle"/>
+
+            <Spinner
+                android:id="@+id/spinner_No_People"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.6"
+                android:background="@android:drawable/btn_dropdown"
+                android:dropDownWidth="match_parent"
+                android:spinnerMode="dialog" />
+            <EditText
+                android:id="@+id/moreEditPeople"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:hint="Enter more people"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <!--Layout for setting Date-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/Margin_Left"
+            android:layout_marginRight="@dimen/Margin_Right"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center_vertical"
+                android:text="Date"
+                style="@style/TextStyle"/>
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/spinner_Date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@android:drawable/btn_dropdown"
+                style="@style/TextStyle"/>
+
+
+        </LinearLayout>
+
+        <!--Layout for setting Time-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/Margin_Left"
+            android:layout_marginRight="@dimen/Margin_Right"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:gravity="center_vertical"
+                android:text="On which time ?"
+                style="@style/TextStyle"/>
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/spinner_Time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@android:drawable/btn_dropdown"
+                style="@style/TextStyle"/>
+
+
+        </LinearLayout>
+        <!--setting of Book Now Button -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Book Now"
+            android:layout_marginTop="@dimen/Margin_Top"
+            android:paddingLeft="@dimen/Margin_Left"
+            android:paddingRight="@dimen/Margin_Right"
+            android:layout_marginBottom="@dimen/Margin_Bottom"
+            android:textColor="@color/ColorPrimary"
+            android:background="@color/textColorPrimary"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

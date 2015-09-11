@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardRsvpParentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_marginBottom="@dimen/card_spacing"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/Cards_Padding"
+        android:orientation="vertical">
+
+        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+            android:id="@+id/Card_RSVP_TitleText"
+            style="@style/Card_InviteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RSVP_TitleText"
+            android:textColor="@color/deepGray" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="5dp" />
+
+        <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+            android:id="@+id/Card_RSVP_QuestionText"
+            style="@style/RSVP_Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/RSVP_QuestionText" />
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/Card_RSVP_YesText"
+                style="@style/Card_RSVP_YesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/RSVP_YesText"
+                android:textColor="@color/selector_text_color"/>
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/Card_RSVP_NoText"
+                style="@style/Card_RSVP_NoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/RSVP_NoText"
+                android:textColor="@color/selector_text_color"/>
+
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/Card_RSVP_MaybeText"
+                style="@style/Card_RSVP_MaybeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/RSVP_MaybeText"
+                android:textColor="@color/selector_text_color"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="fill_parent"
+            android:layout_height="5dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray"/>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardviewtipsParentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_spacing"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!-- shadow on margin bottom of Card -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray" />
+
+    <!-- Tips card layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/Cards_Padding">
+
+        <!-- Tips Title Text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- setting Card Title -->
+            <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                android:id="@+id/Card_TipsTitleText"
+                style="@style/Card_InviteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Tips_Text" />
+
+            <!-- NEW LAYOUT -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <!-- set icon of collapse -->
+                <ImageView
+                    android:id="@+id/icon_collapse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_action_collapse" />
+                <!--  set icon of Expand -->
+                <ImageView
+                    android:id="@+id/icon_expand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_action_expand"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- List of Tips with bullet of card  -->
+        <TableLayout
+            android:id="@+id/tipsTextList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- First tips of card -->
+            <TableRow android:gravity="left|center">
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/Card_TipsPoint1"
+                    style="@style/Card_TipsTextPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_column="1" />
+            </TableRow>
+
+            <!-- Second tips of card -->
+            <TableRow android:gravity="left|center">
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/Card_TipsPoint2"
+                    style="@style/Card_TipsTextPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2" />
+            </TableRow>
+
+            <!-- Third tips of card -->
+            <TableRow android:gravity="left|center">
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/Card_TipsPoint3"
+                    style="@style/Card_TipsTextPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2" />
+            </TableRow>
+
+            <!-- Four tips of card -->
+            <TableRow android:gravity="left|center">
+
+                <TextView
+                    android:layout_column="1"
+                    android:text="•"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.phoenixmarketcity.android.phoenix.views.PhoenixTextView
+                    android:id="@+id/Card_TipsPoint4"
+                    style="@style/Card_TipsTextPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_column="2" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+    <!-- shadow on margin bottom of Card -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/card_shadow"
+        android:background="@color/light_gray" />
+
+</LinearLayout>

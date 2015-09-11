@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.phoenixmarketcity.android.phoenix"
+    android:versionCode="101"
+    android:versionName="1.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <!-- Network Access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- For BLE -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!-- Added for Facebook SDK STARTS -->
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <!-- Added for Facebook SDK ENDS -->
+
+    <!-- Retrieve google+ account name as part of sign-in -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <!-- Google Cloud Messaging Starts -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.phoenixmarketcity.android.phoenix.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.phoenixmarketcity.android.phoenix.permission.C2D_MESSAGE"/>
+    <!-- Google Cloud Messaging Ends -->
+
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <application
+        android:name=".PhoenixApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/phoenix_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/PhoenixTheme" >
+        <activity
+            android:name=".activities.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- [START Google Plus Integration] -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- [END Google Plus Integration] -->
+
+        <!-- [START Facebook Integration] -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- [END Facebook Integration] -->
+
+        <!-- [START Twitter Integration] -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="dede2f24ad006fee72c6e40167daac1adb5e2daf" />
+        <!-- [END Twitter Integration] -->
+
+        <!-- [START Kontakt Integration] -->
+        <meta-data
+            android:name="kontakt.io.API_KEY"
+            android:value="@string/kontakt_io_api_key" />
+
+        <service
+            android:name="com.kontakt.sdk.android.ble.service.ProximityService"
+            android:exported="false" />
+        <service
+            android:name=".beacon.BeaconService"
+            android:exported="false" />
+
+        <receiver android:name=".beacon.BluetoothAdapterReceiver" >
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <!-- [END Kontakt Integration] -->
+
+        <!-- [START Push Notification Integration] -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.phoenixmarketcity.android.phoenix" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name=".push.PhoenixGcmListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".push.PhoenixInstanceIDListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".push.RegistrationIntentService"
+            android:exported="false" >
+        </service>
+        <!-- [END Push Notification Integration] -->
+
+        <activity
+            android:name=".activities.ConfigActivity"
+            android:label="@string/title_activity_config"
+            android:noHistory="true"
+            android:stateNotNeeded="true" />
+        <activity
+            android:name=".activities.LandingPageActivity"
+            android:label="@string/title_activity_homepage" />
+        <activity
+            android:name="com.phoenixmarketcity.android.phoenix.activities.BrandsActivity"
+            android:label="Brands"
+            android:parentActivityName=".activities.LandingPageActivity" />
+        <activity
+            android:name=".activities.WalletActivity"
+            android:label="@string/title_activity_wallet"
+            android:parentActivityName=".activities.LandingPageActivity" />
+        <activity
+            android:name=".activities.DoActivity"
+            android:label="@string/title_activity_do"
+            android:parentActivityName=".activities.LandingPageActivity" />
+        <activity
+            android:name=".activities.GenericPageActivity"
+            android:label="@string/title_activity_store" />
+        <activity
+            android:name=".activities.EventDetailsActivity"
+            android:label="@string/title_activity_event_details" />
+        <activity
+            android:name=".activities.MovieDetailsActivity"
+            android:label="MovieDetails" />
+        <activity
+            android:name=".activities.AddnewaddressActivity"
+            android:label="@string/title_addnewaddressActivity" >
+        </activity>
+        <activity
+            android:name=".activities.UserloginActivity"
+            android:label="@string/title_UserloginActivity" />
+        <activity
+            android:name=".activities.MyaddressActivity"
+            android:label="@string/title_myaddressActivity" />
+        <activity
+            android:name=".activities.UserRegistrationActivity"
+            android:label="@string/title_userregistrationActivity" />
+        <activity
+            android:name=".activities.Eventcontest"
+            android:label="@string/title_eventcontestactivity" >
+        </activity>
+        <activity
+            android:name=".activities.Eventcontestwinner"
+            android:label="@string/title_eventcontestwinneractivity" >
+        </activity>
+        <activity
+            android:name=".activities.FilterPageActivity"
+            android:label="@string/title_activity_FilterPage" />
+        <activity
+            android:name=".activities.CommentsActivity"
+            android:label="CommentPage" />
+        <activity
+            android:name=".activities.StoreCinema"
+            android:label="CommentPage" />
+        <activity
+            android:name=".activities.EventCoverActivity"
+            android:label="EventCover" />
+        <activity
+            android:name=".booking.BookNowScreen"
+            android:label="BookNow" />
+        <activity
+            android:name=".booking.BookNowScreenConfirm"
+            android:label="BookNowConfirm" />
+        <activity
+            android:name=".activities.EventContestActivity"
+            android:label="Contest" />
+        <activity
+            android:name=".activities.EventContestWinnerActivity"
+            android:label="ContestWinner" />
+        <activity android:name=".activities.ContestListActivity"/>
+        <activity android:name=".activities.EventContest_OneActivity"
+            android:label="Event Contest"/>
+        <activity android:name=".activities.EventContest_ThreeActivity"
+            android:label="Event Contest"/>
+        <activity
+            android:name=".activities.BaseActivity"
+            android:label="@string/title_activity_BaseActivity" />
+        <activity
+            android:name=".activities.SearchResultActivity"
+            android:label="@string/title_activity_SearchResult"
+            android:parentActivityName=".activities.LandingPageActivity" />
+        <activity
+            android:name=".activities.Dummypages"
+            android:label="@string/title_activity_dummypages" >
+        </activity>
+        <activity
+            android:name=".activities.BookTableActivity"
+            android:label="@string/title_activity_book_table" >
+        </activity>
+        <activity
+            android:name=".activities.CollectionsActivity"
+            android:label="@string/title_activity_collections" >
+        </activity>
+    </application>
+
+</manifest>
